@@ -1,0 +1,5 @@
+include fy_end_tools/*.yml
+include tests/*.yml
+include tests/test-data/*.csv
+include tests/test-data/merges/*.csv
+include fy_end_tools/VERSION

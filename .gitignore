@@ -1,0 +1,11 @@
+data-mock/
+venv/
+__pycache__
+.vscode/
+secrets/
+.tox
+
+# distribution stuff
+build/
+dist/
+fy_end_tools.egg-info/

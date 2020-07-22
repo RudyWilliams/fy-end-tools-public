@@ -1,0 +1,29 @@
+dirs:
+  csv_files: 'place/path/here' #PLACE PATH FOR DIR HERE
+
+files:
+  log:
+    name: log.csv #PLACE LOG FILE NAME HERE
+    intake_column: intake #PLACE INTAKE COLUMN HERE
+    exit_column: exit #PLACE EXIT COLUMN HERE
+    prog_id_column: prog_id #PLACE PROG ID COLUMN HERE
+    addn_columns: [] #PLACE ANY ADDITIONAL COLUMNS IN THIS LIST
+  progs:
+    name: progs.csv #PLACE PROG FILE NAME HERE
+    addn_columns: [] #PLACE ANY ADDITIONAL COLUMNS IN THIS LIST
+  riskfactors: 
+    name: riskfactor.csv #PLACE RISKFACTOR FILE NAME HERE
+    addn_columns: [] #PLACE ANY ADDITIONAL COLUMNS IN THIS LIST
+    factor_columns: [] #PLACE RISKFACTOR COLUMN NAMES IN THIS LIST
+    rf_type_columns: [] #PLACE THE TYPE RISKFACTOR COLUMN NAMES IN THIS LIST
+    
+merge-on:
+  log_rf: merge_column #PLACE COMMON COLUMN FOR LOG AND RISKFACTOR TABLES HERE
+  log_progs: merge_column #PLACE COMMON COLUMN FOR LOG AND PROGS TABLES HERE
+
+prog_name_id_map:
+  shelter: [a1234, a4567] #PLACE PROG IDS FOR SHELTER HERE
+  nonres: [a4321] #PLACE PROG ID FOR NONRES HERE
+  snap: [a9876] #PLACE PROG ID FOR SNAP HERE
+  tlp: [b1234, b4567] #PLACE PROG IDS FOR TLP HERE
+  jac: [c1234, c4567] #PLACE PROG IDS FOR JAC HERE  

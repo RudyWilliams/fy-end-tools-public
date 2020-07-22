@@ -1,0 +1,9 @@
+pandas~=1.0.5
+xlrd~=1.2.0
+PyYaml~=5.3.1
+plotly~=4.8.1
+
+# testing
+pytest~=5.4.3
+tox~=3.16.1
+

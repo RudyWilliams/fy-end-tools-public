@@ -1,0 +1,26 @@
+dirs:
+  csv_files: 'tests/test-data/merges'
+
+files:
+  log:
+    name: l1.csv
+    intake_column: intake
+    exit_column: exit
+    prog_id_column: pid
+    addn_columns: []
+  progs:
+    name: p1.csv
+    addn_columns: [pname]
+  riskfactors: 
+    name: rf1.csv
+    addn_columns: []
+    factor_columns: ['rf1','rf2','rf3','rf4']
+    rf_type_columns: ['type1','type2']
+    
+merge-on:
+  log_rf: iid
+  log_progs: pid
+
+prog_name_id_map:
+  shelter: [1,3]
+  nonres: [2]
